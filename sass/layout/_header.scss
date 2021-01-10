@@ -1,0 +1,115 @@
+.header {
+border-bottom: 1px solid #eeeeee;
+     
+& .logo{
+margin-right: 93px;
+    }
+    
+& .address {
+    margin-left: auto;
+    }
+}
+    
+    
+.logo {
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+        
+    &-first-part {
+    color: var(--color-focus);
+    }
+}
+    
+    
+    
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 80px;
+        
+    &-list{
+     display: flex;
+    }
+    
+    &-list-item:not(:last-child) {
+    margin-right: 50px;
+    }
+        
+    &-list-item-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+    padding-bottom: 31px;
+    transition: color 250ms var(--timing-function)
+    }
+        
+    &-list-item-link.current {
+    position: relative;
+    color: var(--color-focus);
+    }
+    
+    &-list-item-link.current:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--color-focus);
+    }
+    }
+    
+    .current,
+    .navigation-list-item-link:hover,
+    .navigation-list-item-link:focus {
+        color: var(--color-focus);
+    }
+    
+   
+    
+    .address-list {
+        display: flex;
+    }
+    
+    .contact-information:not(:last-child) {
+        margin-right: 50px;
+    }
+    
+    .contact-information-link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.02em;
+        color: var(--color-text);
+        transition: color 250ms var(--timing-function)
+    }
+    
+    .contact-information-link:hover,
+    .contact-information-link:focus,
+    .contact-information-link:hover .header-icon,
+    .contact-information-link:focus .header-icon {
+        color: var(--color-focus);
+        fill: var(--color-focus) ;
+        transition: color 250ms var(--timing-function),
+        fill 250ms var(--timing-function),
+        border-color 250ms var(--timing-function);
+    }
+    
+.header-icon{
+    fill: rgba(117, 117, 117, 1);
+    margin-right: 10px;
+        
+    &:hover,
+    &:focus{
+    fill: rgba(33, 150, 243, 1);
+    }
+    }
+    
+    
