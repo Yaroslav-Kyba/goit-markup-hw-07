@@ -1,5 +1,5 @@
 .header {
-border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
      
 & .logo{
 margin-right: 93px;
@@ -65,41 +65,43 @@ margin-right: 93px;
     }
     }
     
-    .current,
-    .navigation-list-item-link:hover,
-    .navigation-list-item-link:focus {
-        color: var(--color-focus);
+.current,
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus {
+    color: var(--color-focus);
     }
     
    
     
-    .address-list {
-        display: flex;
+.address-list {
+    display: flex;
+    height: 17px;
+    
     }
     
-    .contact-information:not(:last-child) {
-        margin-right: 50px;
+.contact-information:not(:last-child) {
+    margin-right: 50px;
     }
     
-    .contact-information-link{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.142;
-        letter-spacing: 0.02em;
-        color: var(--color-text);
-        transition: color 250ms var(--timing-function)
+.contact-information-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+    transition: color 250ms var(--timing-function)
     }
     
-    .contact-information-link:hover,
-    .contact-information-link:focus,
-    .contact-information-link:hover .header-icon,
-    .contact-information-link:focus .header-icon {
-        color: var(--color-focus);
-        fill: var(--color-focus) ;
-        transition: color 250ms var(--timing-function),
-        fill 250ms var(--timing-function),
-        border-color 250ms var(--timing-function);
+.contact-information-link:hover,
+.contact-information-link:focus,
+.contact-information-link:hover .header-icon,
+.contact-information-link:focus .header-icon {
+    color: var(--color-focus);
+    fill: var(--color-focus) ;
+    transition: color 250ms var(--timing-function),
+    fill 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
     }
     
 .header-icon{
@@ -111,5 +113,3 @@ margin-right: 93px;
     fill: rgba(33, 150, 243, 1);
     }
     }
-    
-    

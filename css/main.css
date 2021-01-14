@@ -134,6 +134,7 @@ img {
 
 .address-list {
   display: flex;
+  height: 17px;
 }
 
 .contact-information:not(:last-child) {
@@ -652,7 +653,7 @@ img {
 
 .footer-form {
   display: flex;
-  margin-left: 112px;
+  margin-left: 93px;
   margin-top: 12px;
 }
 
